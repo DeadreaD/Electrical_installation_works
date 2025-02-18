@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Sweet mavka script";
+    src: url("/Sweet_mavka/ofont.ru_Sweet\ Mavka\ Script.ttf") format("truetype");
+    font-weight: 400;
+}
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    min-height: 1000px;
+}
+
+/*Логотип изображение*/
+header .figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px; 
+}
+
+/*Текст под логотипом*/
+.hero h1 {
+    font-family: Sweet\ Mavka\ Script;
+    font-size: 96px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Текст под логотипом 2*/
+.hero h2 {
+    text-align: center;
+    font-family: Sweet\ Mavka\ Script;
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    margin-left: 650px;
+}
+
+/*Фон(город)*/
+.hero .city {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.hero .city img {
+    display: block;
+    width: 100%;
+}
+
+/*Иконка мыши*/
+.hero .scroll-hint {
+    width: fit-content;
+    position: absolute;
+    bottom: 115px;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+}
+
+/*Секция инфо*/
+.information {
+    background: #191817;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.information .container {
+    z-index: 999;
+    position: relative;
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.information__content {
+    position: sticky;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+/*Текст инфо*/
+.information .flex {
+    width: 670px;
+}
+.information .p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+.information__heading {
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 2.5px 2.5px #F2BF5B;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Roboto;
+    color: white;
+}
+
+.information .p:not(:first-child) {
+    margin-top: 24px;
+}
+
+
+.information .p1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+/*Фотография*/
+.information .photo img {
+    position: absolute;
+    width: 470px;
+    height: 600px;
+    box-shadow: 25px 20px  #F2BF5B;
+}
+
+.container_2 {
+    background-image: url(/img/style_\ background.png);
+    background-size: cover;
+    position: relative;
+    background-color: #3d3d3d;
+}
+
+.container_2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(/img/style_\ background.png);
+    background-size: cover;
+    pointer-events: none;
+}
+
+.container_2 figure {
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    padding-bottom: 95px;
+}
+
+/*Секция перечень услуг*/
+.list_servies {
+    background-color: #3d3d3d;
+
+}
+
+.list_servies {
+    background-image: url(/img/style_\ background.png);
+    background-size: cover;
+    position: relative;
+}
+
+.list_servies:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: url(/img/style_\ background.png);
+    background-size: cover;
+    pointer-events: none;
+}
+
+
+.servies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+.list1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background: #fff; 
+    box-shadow: 15px 15px #151515;
+}
+.list2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background: #fff; 
+    box-shadow: 15px 15px #151515;
+}
+.list3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background: #fff;
+    box-shadow: 15px 15px #151515;
+}
+.list4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background: #fff;
+    box-shadow: 15px 15px #151515;
+}
+
+
+.list_servies .h h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 70px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px #151515;
+    padding-top: 140px;
+}
+.list_servies .servies h3 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    color: #191817;
+    padding-top: 20px;
+}
+
+.list_servies .servies .p1 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 550px;
+    color: #3F4243;
+}
+
+.list_servies .servies h4 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #A3AAAD;
+    margin: 40px 20px;
+}
+
+.list_servies .servies .p_color_servies {
+    color: #F2BF5B;
+    text-shadow: 1.5px 1.5px  #151515;
+}
+
+.list_servies .cursor img {
+    display: block;
+    margin: 0 auto;
+    padding: 76px 0;
+}
+
+/*Секция оставить заявку*/
+.feedback {
+    background: #191817;
+    width: 100%;
+    height: 100%;
+}
+
+.feedback .container {
+    background: #191817;
+}
+
+.feedback__content h3,
+.fields,
+.feedback__content p {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center; 
+}
+
+.feedback__content h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 48px;
+}
+
+.feedback__content p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding-bottom: 48px;
+}
+
+.feedback__content .p_color_feedback__content {
+    color: #F2BF5B;
+}
+
+.fields {
+    margin: 24px auto;
+}
+
+.fields .action {
+    width: 300px;
+    height: 43px;
+    background: #F2BF5B;
+    border: #F2BF5B;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #191817;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+.fields button:hover {
+    background: #ffee00;
+}
+
+.fields .email {
+    width: 300px;
+    height: 43px;
+    background: #191817;
+    border: #F2BF5B;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*Секция выполненые работы */
+.works {
+    background-color: #3d3d3d;
+    background-image: url(/img/style_\ background.png);
+    background-size: cover;
+    position: relative;
+    padding: 40px 20px;
+}
+
+.works::after {
+    background-image: url(/img/style_\ background.png);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+    pointer-events: none;
+}
+
+/* Заголовок  */
+.works__content h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 5px 5px #151515;
+    margin-bottom: 30px;
+}
+
+/* Основной flex-контейнер */
+.flex-a {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-d {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    justify-content: end;
+}
+/* Левая колонка */
+.flex-b {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1; /* Равномерное деление колонок */
+    margin-bottom: 30px;
+}
+
+.flex-p {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex: 1;
+}
+
+.flex-q {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex: 1;
+    margin-bottom: 30px; 
+}
+
+.№0-1,
+.№0-4 {
+    width: 370px;
+    height: 370px;
+}
+
+.№0-2,
+.№0-3 {
+    width: 270px;
+    height: 200px;
+}
+
+/* Заголовки проектов */
+.works__content h3 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px #3F4243;
+    margin-bottom: 5px;
+}
+
+/* Описание проектов */
+.works__content p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* Нижний проект с выравниванием изображения */
+.flex-d > figure {
+    align-self: flex-end;
+}
+
+.works__content figure {
+    box-shadow: 10px 10px  #F2BF5B; 
+}
+
+.works__content {
+    margin-top: 200px;
+    margin-bottom: 167px;
+}
+
+.flex-c {
+    margin-left: 30px;
+}
+
+.flex-e {
+    margin-right: 30px;
+}
+
+.flex-c  .№01 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.flex-c  .№02 {
+    justify-content: space-around;
+}
+
+.flex-e  div {
+    text-align: end;
+    
+}
+
+/*Футер*/
+.footer {
+    background: #191817;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .container {
+    background: #191817;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer__content .footer_logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+}
+
+.footer .footer__content p {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    column-gap: 12px;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    color: #3F4243;
+    padding-bottom: 100px;
+}
+
+.footer .footer__content .p_color_footer {
+    color: #FFFFFF;
+}
